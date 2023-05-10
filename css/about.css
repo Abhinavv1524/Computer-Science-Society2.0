@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,400&family=Roboto:wght@100&family=Rubik:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;0,900;1,400&family=Roboto:wght@100&family=Rubik:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:ital,wght@0,300;0,700;0,900;1,400&family=Roboto:wght@100&family=Rubik:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=PT+Sans:wght@400;700&family=Poppins:ital,wght@0,300;0,700;0,900;1,400&family=Roboto:wght@100&family=Rubik:wght@300&display=swap');
+
+:root{
+  --font-secondary: 'Poppins', sans-serif;
+  --primary-backgroundColor: #171729;
+  --primary-headingColor: #5caff9;
+  --primary-headingInfoColor: #fcf7f4;
+  /* --team-paragraph-fontSize: 1.1em; */
+  /* --representative-mainHead-font: 2.7em; */
+}
+
+/* html, body{
+    padding:0;
+    margin:0;
+} */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    transition: 0.3s;
+}
+
+
+h1, h2,h4,h5,strong{
+    color: var(--primary-headingColor);
+    font-family: var(--font-secondary);
+    font-weight:bolder;
+    /* font-size: var(--representative-mainHead-font); */
+
+}
+h1{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+p,span,label,textarea{
+    color: var(--primary-headingInfoColor);
+    font-family: 'Poppins', sans-serif;
+    /* line-height: 2.5; */
+    /* font-weight: 300; */
+    /* font-size: var(--team-paragraph-fontSize); */
+}
+
+section{
+    line-height: 2.5;
+    z-index: -1;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding:100px 20vw;
+}
+
+.firstSection{
+    background:var(--primary-backgroundColor);
+}
+
+.secondSection{
+    background:var(--primary-backgroundColor);
+}
+
+
+
+.wave1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave1 svg {
+    position: relative;
+    display: block;
+    width: calc(151% + 1.3px);
+    height: 190px;
+}
+
+.wave1 .shape-fill {
+    fill: var(--primary-headingColor);
+}
+
+
+
+.wave2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 59px;
+}
+
+.wave2 .shape-fill {
+    fill: #171729;
+}
+
+.firstSection, .secondSection, p{
+    font-size: var(--team-paragraph-fontSize);
+}
+
+/* scroll bar css */
+::-webkit-scrollbar{
+    width: 1.2rem;
+}
+::-webkit-scrollbar-thumb{
+    color: #ef744b;
+    background-color: #3d3d68;
+}
+::-webkit-scrollbar-track{
+    background-color: #171729;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #626294;
+}
+@media screen and (max-width:700px) {
+    section{
+        padding : 20px 5vw;
+        min-height: 500px;
+        line-height: 1.5;
+    }
+    h1{
+        font-size: 30px;
+    }
+    p{
+        font-weight: 200;
+        font-size: 16px;
+    }
+    .inner-right p{
+        text-align: center;
+    }
+}
